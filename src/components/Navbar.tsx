@@ -6,7 +6,7 @@ export default function Navbar() {
             <li><a href="/teams/">Team</a></li>
             <li><a href="/sponsors/">Sponsors</a></li>
             <li><a href="/contact">Contact</a></li>
-            <li className = "mr-5"><a href="/join/">Join Us</a></li>
+            <li className = "px-2 mr-5 border-2 border-solid"><a href="/join/">Join Us</a></li>
         </ul>
     </nav>)
 }
