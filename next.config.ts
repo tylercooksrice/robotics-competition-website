@@ -5,7 +5,7 @@ const repo = "robotics-competitive-website";
 const nextConfig: NextConfig = {
   /* config options here */
   cacheComponents: false,
-  partialPrefetching: true,
+  partialPrefetching: false,
   turbopack: {
     rules: {
       "*.css": {
