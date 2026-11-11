@@ -9,7 +9,7 @@ export const metadata = { title: "Berkeley Competitive Robotics", description: "
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en">
-      <body className="min-h-full "><Navbar />{children}<Footer /></body>
+      <body className="min-h-screen w-full overflow-x-hidden "><Navbar />{children}<Footer /></body>
     </html>
   );
 }
