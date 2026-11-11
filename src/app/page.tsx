@@ -3,7 +3,7 @@ export default function Home() {
     <main className="flex flex-col">
 
       <section style={{backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/images/HomePageBanner.webp)`,}} 
-      className="flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat w-full aspect-[17/8]">
+      className="flex flex-col items-center justify-center bg-black/50 bg-blend-multiply bg-cover bg-center bg-no-repeat w-full aspect-[17/8]">
         <h1 className="font-bold italic leading-[1.05] text-center text-[clamp(2rem,11vw,18rem)] leading-none relative -top-[3vw]">
           Combat Robotics at Berkeley
         </h1>
