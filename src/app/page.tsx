@@ -68,7 +68,8 @@ export default function Home() {
             <img
               src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/glitch_text.png`}
               alt="coming soon"
-              className="mx-auto w-[15vw]"></img>
+              className="mx-auto w-[15vw]">
+            </img>
           </figure>
           <figure>Coming Soon</figure>
 

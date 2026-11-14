@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Footer() {
     return(<footer className="m-5">
             <h1 className="text-xl font-bold">Berkeley Competitive Robotics</h1>
@@ -12,19 +14,19 @@ export default function Footer() {
                 <nav>
                     <h1 className="text-sm text-white/85">Explore</h1>
                     <ul>
-                        <li><a href="/">About Us</a></li>
-                        <li><a href="/teams">Team</a></li>
-                        <li><a href="/sponsors">Sponsors</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                        <li><a href="/join-us">Join Us</a></li>
+                        <li><Link href="/">About Us</Link></li>
+                        <li><Link href="/teams">Team</Link></li>
+                        <li><Link href="/sponsors">Sponsors</Link></li>
+                        <li><Link href="/contact">Contact</Link></li>
+                        <li><Link href="/join">Join Us</Link></li>
                     </ul>
                 </nav>
                 <nav>
                     <h1 className="text-sm text-white/85">Website Information</h1>
                     <ul className= "">
-                        <li><a href="/">Privacy Policy</a></li>
-                        <li><a href="/">Accessibility</a></li>
-                        <li><a href="/">Contact</a></li>
+                        <li><Link href="/">Privacy Policy</Link></li>
+                        <li><Link href="/">Accessibility</Link></li>
+                        <li><Link href="/">Contact</Link></li>
                     </ul>
                 </nav>
             </section>
