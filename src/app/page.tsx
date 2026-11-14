@@ -47,22 +47,33 @@ export default function Home() {
         </span>
       </section>
 
-      <section className="flex flex-row bg-[#00B7BD] px-[3vw] py-[5vw]">
-        <div className="flex flex-col justify-center">
-          <h2 className="text-center text-[clamp(0.5rem,1vw,3rem)]">1st Semester</h2>
-          <h1 className="text-center font-bold text-[clamp(1rem,2vw,2.5rem)]">Onboarding Project</h1>
-          <p className=" mt-[0.5vw] text-justify mx-[18vw] text-[clamp(0.5rem,1vw,1.5rem)]">
-            During this semester long program, work with a team of five to design and build a 1lb combat robot under the guidance of current CRB members and leadership.
-          </p>
-        </div>
-        <img src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/club_picture.png`} alt="Club Picture" className="w-[35vw] aspect-[17/10] object-cover justify-center border-white border-5 rounded-xl"></img>
-        
-        <button></button>
-        <button></button>
+      <section className="flex flex-row items-center justify-center gap-[6vw] bg-[#00B7BD] px-[3vw] py-[5vw]">
+        <ProgramCarousel />
+
+        <img
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/club_picture.png`}
+          alt="Club Picture"
+          className="w-[50vw] shrink-0 aspect-[17/10] object-cover border-white border-5 rounded-xl"
+        />
       </section>
 
-      <section className="bg-black text-center">
-        <h1>Our Robots</h1>
+      <section className="bg-black pt-[3vw] pb-[12vw]">
+        <h1 className="text-[clamp(2rem,5vw,5rem)] text-center">Our Robots</h1>
+        <div className="flex flex-row items-center justify-center gap-[25vw]">
+          <figure>
+            <img
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/glitch.png`}
+              alt="glitch robot"
+              className="w-[30vw] aspect-[17/10] object-cover "></img>
+            <img
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/glitch_text.png`}
+              alt="coming soon"
+              className="mx-auto w-[15vw]"></img>
+          </figure>
+          <figure>Coming Soon</figure>
+
+        </div>
+
       </section>
       
     </main>
