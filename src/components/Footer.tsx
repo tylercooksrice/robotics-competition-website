@@ -9,7 +9,7 @@ export default function Footer() {
                 <aside>
                     <h1 className="text-lg font-bold">Get in Touch</h1>
                     <p>Questions about membership, projects, or collaboration? We'd love to hear from you.</p>
-                    <p>Contact: blahblah@example.com</p>
+                    <p>Contact: sponsors@crberkeley.org</p>
                 </aside>
                 <nav>
                     <h1 className="text-sm text-white/85">Explore</h1>

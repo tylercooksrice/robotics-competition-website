@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Navbar() {
     return(
     <nav className="text-[1.25rem] flex justify-between mt-3 mb-3">
-        <a className = "ml-5" href="/"><img className="w-24 h-auto" src="/images/CRB_Logo.jpg" alt="CRB Logo"></img></a>
+        <Link className = "ml-5" href="/"><img className="w-24 h-auto" src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/CRB_Logo.jpg`} alt="CRB Logo"></img></Link>
         <ul className= "flex gap-4 items-center">
             <li><Link href="/">About</Link></li>
             <li><Link href="/teams">Team</Link></li>
