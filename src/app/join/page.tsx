@@ -15,9 +15,9 @@ export default function Join() {
           of skills and backgrounds. If you have the passion, you will find your place 
           within CRB. For more information, we highly recommend coffee chatting a current lead.
         </p>
-        <button className="bg-[var(--background)] text-white mx-auto px-4 py-2">'25/'26 Interest Form</button>
+        <button className="bg-[var(--background)] text-white mx-auto px-8 py-4 text-2xl mt-[2vw] cursor-pointer">'25/'26 Interest Form</button>
         <h3>
-          IINSERT AIRTABLE
+          INSERT AIRTABLE
         </h3>
         <section className="flex flex-column"></section>
     </main>

@@ -55,7 +55,6 @@ export default function Teams() {
               such as graphic design, web development, photography, socials, and finances.
             </p>
           </section>
-
         </article>
     </main>
   );

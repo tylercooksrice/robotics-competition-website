@@ -13,21 +13,22 @@ export default function Sponsors() {
           community! If you’re interested in joining our network of sponsors or would like further information, 
           read more about the process in our Sponsor Packet and connect with our sponsorship team at sponsors@crberkeley.org.
         </p>
-        <button className="bg-[var(--background)] text-white mx-auto px-4 py-2">Sponsor Packet</button>
-        <section className="grid grid-rows-2 grid-cols-3 bg-[#D0CBD2] mt-[5vw]">
+        <button className="bg-[var(--background)] text-white mx-auto px-8 py-4 text-2xl mt-[2vw] cursor-pointer">Sponsor Packet</button>
+        <section className="grid grid-rows-2 grid-cols-3 bg-[#D0CBD2] my-[6vw] px-[8vw]">
           <img src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/rapid_axis.png`}
-          alt="glitch mechanical photo"></img>
+          alt="rapid axis sponsor image" className="place-self-center"></img>
           <img src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/online_metal.png`}
-          alt="glitch mechanical photo"></img>
+          alt="online metal sponsor image" className="place-self-center"></img>
           <img src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/mechanical_engineering.png`}
-          alt="glitch mechanical photo"></img>
+          alt="mechanical engineering sponsor image" className="place-self-center object-cover w-[clamp(5vw,640px,90%)] "></img>
           <img src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/bng.png`}
-          alt="glitch mechanical photo"></img>
+          alt="b&g sponsor image" className="place-self-center"></img>
           <img src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/berk_eng.png`}
-          alt="glitch mechanical photo"></img>
+          alt="berk eng sponsor image" className="place-self-center"></img>
           <img src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/oshcut.png`}
-          alt="glitch mechanical photo"></img>
+          alt="oshcut sponsor image" className="place-self-center w-[clamp(5vw,640px,90%)]"></img>
         </section>
     </main>
+    
   );
 }

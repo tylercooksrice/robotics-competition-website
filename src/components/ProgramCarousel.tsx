@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface ProjectCard {
     title: string;
@@ -33,6 +33,17 @@ const projectCards: ProjectCard[] = [
     }
 ]
 
+function ToggleCard() {
+    let count: number = 0;
+    const [time, setTime] = useState(0);
+    
+    useEffect(() => {  }, []);
+    return(<div></div>);
+}
+
+
+// every 5 seconds, will rotate image to the right by one. clicking on arrows will reset timer to 0 
+
 export default function ProgramCarousel() {
     const [count, setCount] = useState(0);
     
@@ -44,7 +55,7 @@ export default function ProgramCarousel() {
             {projectCards[count].description}
           </p>
           <div className= "flex flex-row justify-center mt-[3vh]">
-            <button onClick={() => count>0 ? setCount(count - 1) : setCount(2)} className="cursor-pointer  mr-[3vw]">
+            <button onClick={() => count>0 ? setCount(count - 1) : setCount(2)} className="cursor-pointer mr-[3vw]">
                 <svg viewBox="0 0 24 24" className="w-[clamp(1rem,1.6vw,2rem)]" fill="none"
                     stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M15 4 7 12l8 8" />
